@@ -1,4 +1,22 @@
+set nocompatible              " be iMproved
+filetype off                  " required!
+
+set rtp+=~/.vim/bundle/vundle/
+call vundle#rc()
+
+Bundle 'flazz/vim-colorschemes'
+Bundle 'kchmck/vim-coffee-script'
+
 syntax on
 
 " Wrap gitcommit file types at the appropriate length
 filetype indent plugin on
+syntax enable
+
+" display line number
+set number
+
+" Solarized stuff
+let g:solarized_termtrans = 1
+set background=dark
+colorscheme solarized
