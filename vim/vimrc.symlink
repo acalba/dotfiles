@@ -8,6 +8,7 @@ call vundle#rc()
 Bundle 'flazz/vim-colorschemes'
 Bundle 'kchmck/vim-coffee-script'
 Bundle 'gmarik/vundle'
+Bundle 'scrooloose/nerdtree'
 
 " ---------------------------------------------------
 
@@ -24,3 +25,13 @@ set number
 let g:solarized_termtrans = 1
 set background=dark
 colorscheme solarized
+
+" fix tabs
+set tabstop=2
+set shiftwidth=2
+set softtabstop=2
+set expandtab
+
+" used to open nertree
+map <C-n> :NERDTreeToggle<CR>
+set modifiable
